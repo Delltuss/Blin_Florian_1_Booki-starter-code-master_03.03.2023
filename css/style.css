@@ -18,6 +18,42 @@ body {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/****** Header ***********/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-logo{
+    width: 61px;
+
+}
+
+.container-logo img{
+    width: 100%;
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+
+.links li {
+     margin: 0 34px;
+}
+
+.links li > a {
+    text-decoration: none;
+}
+
+
 .main-container {
     width: 100%;
     max-width: 1440px;
