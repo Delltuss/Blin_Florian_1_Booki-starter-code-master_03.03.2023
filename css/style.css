@@ -114,16 +114,6 @@ header {
 
 /****** Recherche ***********/
 
-.search-input {
-    margin-top: 20px;
-    height: 49px;
-}
-
-.search-input > form {
-    display: flex;
-    align-items: center;
-}
-
 .search-input > form > input[type="search"] {
     width: 232px;
 }
@@ -132,15 +122,6 @@ header {
     font-size: 0px;
     margin: 0;
     border: 1px solid #0065FC;
-    background-color: #0065FC;
-    border: none;
-    outline: none;
-    padding: 14px 16px;
-    border-radius: 0px 15px 15px 0px;
-    font-size: 18px;
-    color: #FFFFFF;
-    margin-left: -72px;
-    cursor: pointer;
 }
 
 .search-input > form > button > i {
@@ -152,17 +133,6 @@ header {
 .filterbar {
     flex-direction: column;
     align-items: baseline;
-}
-
-.filterbar p {
-    font-size: 18px;
-    color: #000000;
-    font-weight: 700;
-}
-
-.filterbar > .buttons {
-    grid-template-columns: auto auto;
-    gap: 14px;
 }
 
 .filterbar > .buttons > button {
