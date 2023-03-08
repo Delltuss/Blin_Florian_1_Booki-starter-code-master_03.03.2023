@@ -14,8 +14,11 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    max-width: 1400px;
+    padding: 44px 50px 0;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -28,6 +31,7 @@ a {
 }
 
 /****** Header ***********/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -112,6 +116,64 @@ header {
     color: var(--main-bg-color)
 }
 
+/****** Recherche bouton ***********/
+
+.search-input {
+    margin-top: 20px;
+    height: 49px;
+}
+
+.search-input > form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input > form > label {
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input > form > label > i {
+    font-size: 18px;
+}
+
+.search-input > form > input[type="search"] {
+    outline: none;
+    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    width: 282px;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.search-input > form > input[type="search"]::placeholder {
+    color: #000000;
+}
+
+.search-input > form > button {
+    background-color: #0065FC;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: -72px;
+    cursor: pointer;
+}
+
+.search-input > form > button > i {
+    font-size: 0;
+}
+
 /****** Recherche ***********/
 
 .search-input > form > input[type="search"] {
@@ -128,23 +190,63 @@ header {
     font-size: 17px;
 }
 
-/****** Filtres ***********/
+/****** Filtres bar ***********/
 
 .filterbar {
-    flex-direction: column;
-    align-items: baseline;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    gap: 17px;
 }
 
-.filterbar > .buttons > button {
-    width: 200px;
-    height: 50px;
-    font-size: 14px;
-    padding: 0 0 0 13px;
-    text-align: left;
+.filterbar p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
 }
 
-.filterbar > .buttons > button > .icon {
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 36px;
+}
+
+.buttons button {
     font-size: 14px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    height: 48px;
+    padding: 4px 20px;
+}
+
+.buttons button:hover {
+    background-color: #DEEBFF;
+}
+
+.buttons button i {
+    margin-right: 2px;
+}
+
+/* Info Bar */
+
+.infobar {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.infobar i {
+    margin-right: 11px;
+    border: 1px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
 }
 
 /* Info Bar */
