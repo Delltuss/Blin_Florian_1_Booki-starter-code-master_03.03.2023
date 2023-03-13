@@ -116,7 +116,7 @@ header {
     color: var(--main-bg-color)
 }
 
-/****** Recherche bouton ***********/
+/****** Recherche ***********/
 
 .search-input {
     margin-top: 20px;
@@ -162,7 +162,7 @@ header {
     background-color: #0065FC;
     border: none;
     outline: none;
-    padding: 14px 16px;
+    padding: 15px 16px;
     border-radius: 0px 15px 15px 0px;
     font-size: 18px;
     color: #FFFFFF;
@@ -174,23 +174,7 @@ header {
     font-size: 0;
 }
 
-/****** Recherche ***********/
-
-.search-input > form > input[type="search"] {
-    width: 232px;
-}
-
-.search-input > form > button {
-    font-size: 0px;
-    margin: 0;
-    border: 1px solid #0065FC;
-}
-
-.search-input > form > button > i {
-    font-size: 17px;
-}
-
-/****** Filtres bar ***********/
+/* Filter Bar */
 
 .filterbar {
     display: flex;
@@ -208,7 +192,7 @@ header {
 .buttons {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 36px;
+    gap: 15px;
 }
 
 .buttons button {
@@ -249,26 +233,21 @@ header {
     font-size: 12px;
 }
 
-/* Info Bar */
+/******Bar Recherche ***********/
 
-.infobar {
-    margin: 35px;
-    display: flex;
-    align-items: center;
+.search-input > form > input[type="search"] {
+    width: 232px;
 }
 
-.infobar i {
-    margin-right: 11px;
-    border: 1px solid #D9D9D9;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 12px;
+.search-input > form > button {
+    font-size: 0px;
+    margin: 0;
+    border: 1px solid #0065FC;
 }
 
+.search-input > form > button > i {
+    font-size: 17px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -333,8 +312,31 @@ header {
     margin-bottom: 5px;
 }
 
+/****** Footer ***********/
 
+footer {
+    min-height: 225px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+footer .footer-content {
+    margin-top: 45px;
+}
+
+footer .footer-content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer .footer-content .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
