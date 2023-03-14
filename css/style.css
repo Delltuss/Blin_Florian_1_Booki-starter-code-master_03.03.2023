@@ -15,7 +15,7 @@
 
 body {
     max-width: 1400px;
-    padding: 44px 50px 0;
+    padding: 0 50px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
@@ -38,6 +38,7 @@ header {
 }
 
 .container-logo{
+    margin-top: 25px;
     width: 61px;
 
 }
@@ -49,36 +50,26 @@ header {
 .links {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
 }
 
 
 .links li {
      margin: 0 34px;
-}
-
-.links li::before {
-    content: "";
-    display: block;
-    width: 162px;
-    height: 2px;
-    background-color: #0065FC;
-    position: relative;
-    top: -44px;
-    opacity: 0;
+     padding-top: 16px;
 }
 
 .links li > a {
     text-decoration: none;
 }
 
-.links > li:hover, .links > li:hover a {
-    border-color: #0065FC;
-    color: #0065FC;
+.links > li:hover {
+    border-top: 1px solid #0065FC;
 }
 
-.links li:hover::before {
-    opacity: 1;
+.links > li:hover a {
+    color: #0065FC;
 }
 
 .main-container {
@@ -117,6 +108,14 @@ header {
 }
 
 /****** Recherche ***********/
+
+.search-text {
+    display: block;
+}
+
+.search-icon {
+    display: none;
+}
 
 .search-input {
     margin-top: 20px;
@@ -240,7 +239,8 @@ header {
 }
 
 .search-input > form > button {
-    font-size: 0px;
+    font-size: 18px;
+    font-weight: 700;
     margin: 0;
     border: 1px solid #0065FC;
 }
