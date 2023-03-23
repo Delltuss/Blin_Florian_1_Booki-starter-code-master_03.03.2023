@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+padding: 0;
+margin: 0;
 }
 
 :root {
@@ -26,6 +28,15 @@ a {
     color: #000000;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.offer {
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
 .sectionMain {
     padding: 31px 20px;
 }
@@ -40,7 +51,6 @@ header {
 .container-logo{
     margin-top: 25px;
     width: 61px;
-
 }
 
 .container-logo img{
@@ -54,6 +64,9 @@ header {
     display: flex;
 }
 
+.offer {
+    border-radius: 15;
+}
 
 .links li {
      margin: 0 34px;
@@ -161,7 +174,7 @@ header {
     background-color: #0065FC;
     border: none;
     outline: none;
-    padding: 15px 16px;
+    padding: 13px 16px;
     border-radius: 0px 15px 15px 0px;
     font-size: 18px;
     color: #FFFFFF;
@@ -249,6 +262,67 @@ header {
     font-size: 17px;
 }
 
+/************************************************/
+/***************** Hébergements *****************/
+/************************************************/
+
+#sectionOffers {
+    display: flex;
+    gap: 40px;
+    width: 65%;
+    flex-direction: column;
+}
+
+/* Hébergements à Marseille */
+
+.offersMain > .title {
+    margin-bottom: 23px;
+}
+
+.offersMain > .listCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.offersMain > a {
+    display: block;
+    width: fit-content;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.cardOfferMain {
+    width: 100%;
+    min-height: 215px;
+}
+
+.cardText h3 {
+    margin: 4px 0;
+}
+
+.cardText p {
+    margin: 8px 0;
+}
+
+.cardOfferMain > .cardText {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardOfferMain > .cardImage {
+    width: 100%;
+    height: 100%;
+    max-height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+#main-wrapper {
+    display: flex;
+
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -270,6 +344,7 @@ header {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: ;
 }
 
 .populaires-title {
@@ -312,6 +387,42 @@ header {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+
+#sectionActivities {
+    padding: 60px 0;
+}
+
+#sectionActivities > .title {
+    margin-bottom: 18.47px;
+}
+
+#sectionActivities > .listCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+}
+
+#sectionActivities > .listCards > .card {
+    width: 302px;
+    padding: 0;
+}
+
+#sectionActivities > .listCards > .card > figure > img {
+    object-fit: cover;
+    width: 100%;
+    height: 388.51px;
+    border-radius: 20px 20px 0 0;
+}
+
+#sectionActivities > .listCards > .card > figure > figcaption {
+    height: 56px;
+    margin: -4px 19px 0px 19px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
 /****** Footer ***********/
 
 footer {
@@ -330,12 +441,14 @@ footer .footer-content h2 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
+
 }
 
 footer .footer-content .footer-links {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding: 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
